@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<fileSet version="1" anchorPath="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cyfitter_cfg.h" value="HEADER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cyfitter_sysint_cfg.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cyfitter_sysint_cfg.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Pins and Interrupts" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cyfitter_cfg.c" value="SOURCE_C;CortexM0p;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cymetadata.c" value="SOURCE_C;CortexM0p,CortexM4;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cydevice_trm.h" value="HEADER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cydevicegnu_trm.inc" value="HEADER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cydevicerv_trm.inc" value="HEADER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cydeviceiar_trm.inc" value="HEADER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cyfitter_gpio.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cyfitter_sysint.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\OSCILLOSCOPE_ADC.c" value="SOURCE_C;CortexM0p,CortexM4;;;;OSCILLOSCOPE_ADC" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\OSCILLOSCOPE_ADC.h" value="HEADER;;;;;OSCILLOSCOPE_ADC" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\OSCILLOSCOPE_ADC_INT.c" value="SOURCE_C;CortexM0p,CortexM4;;;;OSCILLOSCOPE_ADC" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\OSCILLOSCOPE_ADC_INIT.c" value="SOURCE_C;CortexM0p,CortexM4;;;;OSCILLOSCOPE_ADC" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\OSCILLOSCOPE_ADC_PM.c" value="SOURCE_C;CortexM0p,CortexM4;;;;OSCILLOSCOPE_ADC" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\FILTER_OP1.h" value="HEADER;;;;;FILTER_OP1" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\FILTER_OP1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;FILTER_OP1" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\FILTER_OP0.h" value="HEADER;;;;;FILTER_OP0" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\FILTER_OP0.c" value="SOURCE_C;CortexM0p,CortexM4;;;;FILTER_OP0" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\ADC_PWM.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADC_PWM" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\ADC_PWM.h" value="HEADER;;;;;ADC_PWM" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\PWM_CLK.h" value="HEADER;;;;;PWM_CLK" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\ADC_CLK.h" value="HEADER;;;;;ADC_CLK" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\ADC_DMA.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADC_DMA" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\ADC_DMA.h" value="HEADER;;;;;ADC_DMA" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\OSCILLOSCOPE_UART.c" value="SOURCE_C;CortexM0p,CortexM4;;;;OSCILLOSCOPE_UART" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\OSCILLOSCOPE_UART.h" value="HEADER;;;;;OSCILLOSCOPE_UART" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\UART_CLK.h" value="HEADER;;;;;UART_CLK" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />
+  <file name="C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\codegentemp\cycodeshareimport.scat" value="OTHER;;;;;" />
+</fileSet>

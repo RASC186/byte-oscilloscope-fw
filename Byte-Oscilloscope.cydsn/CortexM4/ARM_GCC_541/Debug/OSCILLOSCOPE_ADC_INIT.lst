@@ -1,0 +1,2078 @@
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"OSCILLOSCOPE_ADC_INIT.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.global	OSCILLOSCOPE_ADC_allConfigs
+  21              		.section	.rodata
+  22              		.align	2
+  23              		.type	OSCILLOSCOPE_ADC_allConfigs, %object
+  24              		.size	OSCILLOSCOPE_ADC_allConfigs, 16
+  25              	OSCILLOSCOPE_ADC_allConfigs:
+  26 0000 00000000 		.word	0
+  27 0004 01000000 		.word	1
+  28 0008 10000000 		.word	OSCILLOSCOPE_ADC_hwConfigs
+  29 000c 00000000 		.word	0
+  30              		.type	OSCILLOSCOPE_ADC_hwConfigs, %object
+  31              		.size	OSCILLOSCOPE_ADC_hwConfigs, 120
+  32              	OSCILLOSCOPE_ADC_hwConfigs:
+  33 0010 E3CE2053 		.word	1394659043
+  34 0014 80000290 		.word	-1878916992
+  35 0018 03000200 		.word	131075
+  36 001c 02000200 		.word	131074
+  37 0020 0002000E 		.word	234881536
+  38 0024 00       		.byte	0
+  39 0025 000000   		.space	3
+  40 0028 01000000 		.word	1
+  41 002c 00000000 		.word	0
+  42 0030 00000000 		.word	0
+  43 0034 00000000 		.word	0
+  44 0038 00000000 		.word	0
+  45 003c 00000000 		.word	0
+  46 0040 00000000 		.word	0
+  47 0044 00000000 		.word	0
+  48 0048 00000000 		.word	0
+  49 004c 00000000 		.word	0
+  50 0050 00000000 		.word	0
+  51 0054 00000000 		.word	0
+  52 0058 00000000 		.word	0
+  53 005c 00000000 		.word	0
+  54 0060 00000000 		.word	0
+  55 0064 00000000 		.word	0
+  56 0068 00000000 		.word	0
+  57 006c 01000000 		.word	1
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 2
+
+
+  58 0070 00000000 		.word	0
+  59 0074 00000000 		.word	0
+  60 0078 00000000 		.word	0
+  61 007c 00000000 		.word	0
+  62 0080 00       		.byte	0
+  63 0081 000000   		.space	3
+  64 0084 72060000 		.word	1650
+  65              		.text
+  66              	.Letext0:
+  67              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  68              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  69              		.file 3 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
+  70              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+  71              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/sar/cy_sar.h"
+  72              		.file 6 "Generated_Source\\PSoC6\\OSCILLOSCOPE_ADC.h"
+  73              		.file 7 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+  74              		.file 8 "Generated_Source\\PSoC6\\OSCILLOSCOPE_ADC_INIT.c"
+  75              		.section	.debug_info,"",%progbits
+  76              	.Ldebug_info0:
+  77 0000 0E070000 		.4byte	0x70e
+  78 0004 0400     		.2byte	0x4
+  79 0006 00000000 		.4byte	.Ldebug_abbrev0
+  80 000a 04       		.byte	0x4
+  81 000b 01       		.uleb128 0x1
+  82 000c A2050000 		.4byte	.LASF143
+  83 0010 0C       		.byte	0xc
+  84 0011 B7060000 		.4byte	.LASF144
+  85 0015 23010000 		.4byte	.LASF145
+  86 0019 00000000 		.4byte	.Ldebug_line0
+  87 001d 02       		.uleb128 0x2
+  88 001e 02       		.byte	0x2
+  89 001f 05       		.byte	0x5
+  90 0020 5D070000 		.4byte	.LASF0
+  91 0024 02       		.uleb128 0x2
+  92 0025 01       		.byte	0x1
+  93 0026 06       		.byte	0x6
+  94 0027 C4010000 		.4byte	.LASF1
+  95 002b 03       		.uleb128 0x3
+  96 002c 7E000000 		.4byte	.LASF3
+  97 0030 01       		.byte	0x1
+  98 0031 1D       		.byte	0x1d
+  99 0032 36000000 		.4byte	0x36
+ 100 0036 02       		.uleb128 0x2
+ 101 0037 01       		.byte	0x1
+ 102 0038 08       		.byte	0x8
+ 103 0039 1C070000 		.4byte	.LASF2
+ 104 003d 03       		.uleb128 0x3
+ 105 003e 4E030000 		.4byte	.LASF4
+ 106 0042 01       		.byte	0x1
+ 107 0043 29       		.byte	0x29
+ 108 0044 1D000000 		.4byte	0x1d
+ 109 0048 03       		.uleb128 0x3
+ 110 0049 19080000 		.4byte	.LASF5
+ 111 004d 01       		.byte	0x1
+ 112 004e 2B       		.byte	0x2b
+ 113 004f 53000000 		.4byte	0x53
+ 114 0053 02       		.uleb128 0x2
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 3
+
+
+ 115 0054 02       		.byte	0x2
+ 116 0055 07       		.byte	0x7
+ 117 0056 EE020000 		.4byte	.LASF6
+ 118 005a 03       		.uleb128 0x3
+ 119 005b 37080000 		.4byte	.LASF7
+ 120 005f 01       		.byte	0x1
+ 121 0060 3F       		.byte	0x3f
+ 122 0061 65000000 		.4byte	0x65
+ 123 0065 02       		.uleb128 0x2
+ 124 0066 04       		.byte	0x4
+ 125 0067 05       		.byte	0x5
+ 126 0068 7B080000 		.4byte	.LASF8
+ 127 006c 03       		.uleb128 0x3
+ 128 006d 27030000 		.4byte	.LASF9
+ 129 0071 01       		.byte	0x1
+ 130 0072 41       		.byte	0x41
+ 131 0073 77000000 		.4byte	0x77
+ 132 0077 02       		.uleb128 0x2
+ 133 0078 04       		.byte	0x4
+ 134 0079 07       		.byte	0x7
+ 135 007a B5030000 		.4byte	.LASF10
+ 136 007e 02       		.uleb128 0x2
+ 137 007f 08       		.byte	0x8
+ 138 0080 05       		.byte	0x5
+ 139 0081 B6010000 		.4byte	.LASF11
+ 140 0085 02       		.uleb128 0x2
+ 141 0086 08       		.byte	0x8
+ 142 0087 07       		.byte	0x7
+ 143 0088 D9000000 		.4byte	.LASF12
+ 144 008c 04       		.uleb128 0x4
+ 145 008d 04       		.byte	0x4
+ 146 008e 05       		.byte	0x5
+ 147 008f 696E7400 		.ascii	"int\000"
+ 148 0093 02       		.uleb128 0x2
+ 149 0094 04       		.byte	0x4
+ 150 0095 07       		.byte	0x7
+ 151 0096 8D030000 		.4byte	.LASF13
+ 152 009a 03       		.uleb128 0x3
+ 153 009b DC080000 		.4byte	.LASF14
+ 154 009f 02       		.byte	0x2
+ 155 00a0 18       		.byte	0x18
+ 156 00a1 2B000000 		.4byte	0x2b
+ 157 00a5 03       		.uleb128 0x3
+ 158 00a6 9A010000 		.4byte	.LASF15
+ 159 00aa 02       		.byte	0x2
+ 160 00ab 20       		.byte	0x20
+ 161 00ac 3D000000 		.4byte	0x3d
+ 162 00b0 03       		.uleb128 0x3
+ 163 00b1 9A030000 		.4byte	.LASF16
+ 164 00b5 02       		.byte	0x2
+ 165 00b6 24       		.byte	0x24
+ 166 00b7 48000000 		.4byte	0x48
+ 167 00bb 03       		.uleb128 0x3
+ 168 00bc 14070000 		.4byte	.LASF17
+ 169 00c0 02       		.byte	0x2
+ 170 00c1 2C       		.byte	0x2c
+ 171 00c2 5A000000 		.4byte	0x5a
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 4
+
+
+ 172 00c6 03       		.uleb128 0x3
+ 173 00c7 D9070000 		.4byte	.LASF18
+ 174 00cb 02       		.byte	0x2
+ 175 00cc 30       		.byte	0x30
+ 176 00cd 6C000000 		.4byte	0x6c
+ 177 00d1 02       		.uleb128 0x2
+ 178 00d2 04       		.byte	0x4
+ 179 00d3 07       		.byte	0x7
+ 180 00d4 DF040000 		.4byte	.LASF19
+ 181 00d8 02       		.uleb128 0x2
+ 182 00d9 08       		.byte	0x8
+ 183 00da 04       		.byte	0x4
+ 184 00db EE070000 		.4byte	.LASF20
+ 185 00df 05       		.uleb128 0x5
+ 186 00e0 B8       		.byte	0xb8
+ 187 00e1 03       		.byte	0x3
+ 188 00e2 34       		.byte	0x34
+ 189 00e3 F0040000 		.4byte	0x4f0
+ 190 00e7 06       		.uleb128 0x6
+ 191 00e8 C0000000 		.4byte	.LASF21
+ 192 00ec 03       		.byte	0x3
+ 193 00ed 37       		.byte	0x37
+ 194 00ee C6000000 		.4byte	0xc6
+ 195 00f2 00       		.byte	0
+ 196 00f3 06       		.uleb128 0x6
+ 197 00f4 1C030000 		.4byte	.LASF22
+ 198 00f8 03       		.byte	0x3
+ 199 00f9 38       		.byte	0x38
+ 200 00fa C6000000 		.4byte	0xc6
+ 201 00fe 04       		.byte	0x4
+ 202 00ff 06       		.uleb128 0x6
+ 203 0100 7D020000 		.4byte	.LASF23
+ 204 0104 03       		.byte	0x3
+ 205 0105 39       		.byte	0x39
+ 206 0106 C6000000 		.4byte	0xc6
+ 207 010a 08       		.byte	0x8
+ 208 010b 06       		.uleb128 0x6
+ 209 010c ED060000 		.4byte	.LASF24
+ 210 0110 03       		.byte	0x3
+ 211 0111 3A       		.byte	0x3a
+ 212 0112 C6000000 		.4byte	0xc6
+ 213 0116 0C       		.byte	0xc
+ 214 0117 06       		.uleb128 0x6
+ 215 0118 08020000 		.4byte	.LASF25
+ 216 011c 03       		.byte	0x3
+ 217 011d 3B       		.byte	0x3b
+ 218 011e C6000000 		.4byte	0xc6
+ 219 0122 10       		.byte	0x10
+ 220 0123 06       		.uleb128 0x6
+ 221 0124 31020000 		.4byte	.LASF26
+ 222 0128 03       		.byte	0x3
+ 223 0129 3C       		.byte	0x3c
+ 224 012a C6000000 		.4byte	0xc6
+ 225 012e 14       		.byte	0x14
+ 226 012f 06       		.uleb128 0x6
+ 227 0130 D2030000 		.4byte	.LASF27
+ 228 0134 03       		.byte	0x3
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 5
+
+
+ 229 0135 3D       		.byte	0x3d
+ 230 0136 C6000000 		.4byte	0xc6
+ 231 013a 18       		.byte	0x18
+ 232 013b 06       		.uleb128 0x6
+ 233 013c 67000000 		.4byte	.LASF28
+ 234 0140 03       		.byte	0x3
+ 235 0141 3E       		.byte	0x3e
+ 236 0142 C6000000 		.4byte	0xc6
+ 237 0146 1C       		.byte	0x1c
+ 238 0147 06       		.uleb128 0x6
+ 239 0148 67090000 		.4byte	.LASF29
+ 240 014c 03       		.byte	0x3
+ 241 014d 3F       		.byte	0x3f
+ 242 014e C6000000 		.4byte	0xc6
+ 243 0152 20       		.byte	0x20
+ 244 0153 06       		.uleb128 0x6
+ 245 0154 6E050000 		.4byte	.LASF30
+ 246 0158 03       		.byte	0x3
+ 247 0159 40       		.byte	0x40
+ 248 015a C6000000 		.4byte	0xc6
+ 249 015e 24       		.byte	0x24
+ 250 015f 06       		.uleb128 0x6
+ 251 0160 B1040000 		.4byte	.LASF31
+ 252 0164 03       		.byte	0x3
+ 253 0165 43       		.byte	0x43
+ 254 0166 9A000000 		.4byte	0x9a
+ 255 016a 28       		.byte	0x28
+ 256 016b 06       		.uleb128 0x6
+ 257 016c 4D000000 		.4byte	.LASF32
+ 258 0170 03       		.byte	0x3
+ 259 0171 44       		.byte	0x44
+ 260 0172 9A000000 		.4byte	0x9a
+ 261 0176 29       		.byte	0x29
+ 262 0177 06       		.uleb128 0x6
+ 263 0178 5D090000 		.4byte	.LASF33
+ 264 017c 03       		.byte	0x3
+ 265 017d 45       		.byte	0x45
+ 266 017e 9A000000 		.4byte	0x9a
+ 267 0182 2A       		.byte	0x2a
+ 268 0183 06       		.uleb128 0x6
+ 269 0184 60050000 		.4byte	.LASF34
+ 270 0188 03       		.byte	0x3
+ 271 0189 46       		.byte	0x46
+ 272 018a 9A000000 		.4byte	0x9a
+ 273 018e 2B       		.byte	0x2b
+ 274 018f 06       		.uleb128 0x6
+ 275 0190 24040000 		.4byte	.LASF35
+ 276 0194 03       		.byte	0x3
+ 277 0195 47       		.byte	0x47
+ 278 0196 9A000000 		.4byte	0x9a
+ 279 019a 2C       		.byte	0x2c
+ 280 019b 06       		.uleb128 0x6
+ 281 019c 41080000 		.4byte	.LASF36
+ 282 01a0 03       		.byte	0x3
+ 283 01a1 48       		.byte	0x48
+ 284 01a2 9A000000 		.4byte	0x9a
+ 285 01a6 2D       		.byte	0x2d
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 6
+
+
+ 286 01a7 06       		.uleb128 0x6
+ 287 01a8 11020000 		.4byte	.LASF37
+ 288 01ac 03       		.byte	0x3
+ 289 01ad 49       		.byte	0x49
+ 290 01ae 9A000000 		.4byte	0x9a
+ 291 01b2 2E       		.byte	0x2e
+ 292 01b3 06       		.uleb128 0x6
+ 293 01b4 BE040000 		.4byte	.LASF38
+ 294 01b8 03       		.byte	0x3
+ 295 01b9 4A       		.byte	0x4a
+ 296 01ba 9A000000 		.4byte	0x9a
+ 297 01be 2F       		.byte	0x2f
+ 298 01bf 06       		.uleb128 0x6
+ 299 01c0 FF070000 		.4byte	.LASF39
+ 300 01c4 03       		.byte	0x3
+ 301 01c5 4B       		.byte	0x4b
+ 302 01c6 9A000000 		.4byte	0x9a
+ 303 01ca 30       		.byte	0x30
+ 304 01cb 06       		.uleb128 0x6
+ 305 01cc C7030000 		.4byte	.LASF40
+ 306 01d0 03       		.byte	0x3
+ 307 01d1 4E       		.byte	0x4e
+ 308 01d2 9A000000 		.4byte	0x9a
+ 309 01d6 31       		.byte	0x31
+ 310 01d7 06       		.uleb128 0x6
+ 311 01d8 70000000 		.4byte	.LASF41
+ 312 01dc 03       		.byte	0x3
+ 313 01dd 4F       		.byte	0x4f
+ 314 01de 9A000000 		.4byte	0x9a
+ 315 01e2 32       		.byte	0x32
+ 316 01e3 06       		.uleb128 0x6
+ 317 01e4 81030000 		.4byte	.LASF42
+ 318 01e8 03       		.byte	0x3
+ 319 01e9 50       		.byte	0x50
+ 320 01ea 9A000000 		.4byte	0x9a
+ 321 01ee 33       		.byte	0x33
+ 322 01ef 06       		.uleb128 0x6
+ 323 01f0 F3040000 		.4byte	.LASF43
+ 324 01f4 03       		.byte	0x3
+ 325 01f5 51       		.byte	0x51
+ 326 01f6 9A000000 		.4byte	0x9a
+ 327 01fa 34       		.byte	0x34
+ 328 01fb 06       		.uleb128 0x6
+ 329 01fc 84080000 		.4byte	.LASF44
+ 330 0200 03       		.byte	0x3
+ 331 0201 52       		.byte	0x52
+ 332 0202 A5000000 		.4byte	0xa5
+ 333 0206 36       		.byte	0x36
+ 334 0207 06       		.uleb128 0x6
+ 335 0208 AF020000 		.4byte	.LASF45
+ 336 020c 03       		.byte	0x3
+ 337 020d 53       		.byte	0x53
+ 338 020e A5000000 		.4byte	0xa5
+ 339 0212 38       		.byte	0x38
+ 340 0213 06       		.uleb128 0x6
+ 341 0214 AC080000 		.4byte	.LASF46
+ 342 0218 03       		.byte	0x3
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 7
+
+
+ 343 0219 54       		.byte	0x54
+ 344 021a A5000000 		.4byte	0xa5
+ 345 021e 3A       		.byte	0x3a
+ 346 021f 06       		.uleb128 0x6
+ 347 0220 3E090000 		.4byte	.LASF47
+ 348 0224 03       		.byte	0x3
+ 349 0225 55       		.byte	0x55
+ 350 0226 9A000000 		.4byte	0x9a
+ 351 022a 3C       		.byte	0x3c
+ 352 022b 06       		.uleb128 0x6
+ 353 022c D6020000 		.4byte	.LASF48
+ 354 0230 03       		.byte	0x3
+ 355 0231 56       		.byte	0x56
+ 356 0232 9A000000 		.4byte	0x9a
+ 357 0236 3D       		.byte	0x3d
+ 358 0237 06       		.uleb128 0x6
+ 359 0238 A9070000 		.4byte	.LASF49
+ 360 023c 03       		.byte	0x3
+ 361 023d 57       		.byte	0x57
+ 362 023e 9A000000 		.4byte	0x9a
+ 363 0242 3E       		.byte	0x3e
+ 364 0243 06       		.uleb128 0x6
+ 365 0244 5B000000 		.4byte	.LASF50
+ 366 0248 03       		.byte	0x3
+ 367 0249 58       		.byte	0x58
+ 368 024a 9A000000 		.4byte	0x9a
+ 369 024e 3F       		.byte	0x3f
+ 370 024f 06       		.uleb128 0x6
+ 371 0250 79050000 		.4byte	.LASF51
+ 372 0254 03       		.byte	0x3
+ 373 0255 59       		.byte	0x59
+ 374 0256 9A000000 		.4byte	0x9a
+ 375 025a 40       		.byte	0x40
+ 376 025b 06       		.uleb128 0x6
+ 377 025c 32030000 		.4byte	.LASF52
+ 378 0260 03       		.byte	0x3
+ 379 0261 5A       		.byte	0x5a
+ 380 0262 9A000000 		.4byte	0x9a
+ 381 0266 41       		.byte	0x41
+ 382 0267 06       		.uleb128 0x6
+ 383 0268 63040000 		.4byte	.LASF53
+ 384 026c 03       		.byte	0x3
+ 385 026d 5B       		.byte	0x5b
+ 386 026e 9A000000 		.4byte	0x9a
+ 387 0272 42       		.byte	0x42
+ 388 0273 06       		.uleb128 0x6
+ 389 0274 55050000 		.4byte	.LASF54
+ 390 0278 03       		.byte	0x3
+ 391 0279 5C       		.byte	0x5c
+ 392 027a 9A000000 		.4byte	0x9a
+ 393 027e 43       		.byte	0x43
+ 394 027f 06       		.uleb128 0x6
+ 395 0280 86020000 		.4byte	.LASF55
+ 396 0284 03       		.byte	0x3
+ 397 0285 5D       		.byte	0x5d
+ 398 0286 9A000000 		.4byte	0x9a
+ 399 028a 44       		.byte	0x44
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 8
+
+
+ 400 028b 06       		.uleb128 0x6
+ 401 028c 00000000 		.4byte	.LASF56
+ 402 0290 03       		.byte	0x3
+ 403 0291 5E       		.byte	0x5e
+ 404 0292 C6000000 		.4byte	0xc6
+ 405 0296 48       		.byte	0x48
+ 406 0297 06       		.uleb128 0x6
+ 407 0298 6F020000 		.4byte	.LASF57
+ 408 029c 03       		.byte	0x3
+ 409 029d 5F       		.byte	0x5f
+ 410 029e C6000000 		.4byte	0xc6
+ 411 02a2 4C       		.byte	0x4c
+ 412 02a3 06       		.uleb128 0x6
+ 413 02a4 97090000 		.4byte	.LASF58
+ 414 02a8 03       		.byte	0x3
+ 415 02a9 60       		.byte	0x60
+ 416 02aa 9A000000 		.4byte	0x9a
+ 417 02ae 50       		.byte	0x50
+ 418 02af 06       		.uleb128 0x6
+ 419 02b0 74010000 		.4byte	.LASF59
+ 420 02b4 03       		.byte	0x3
+ 421 02b5 61       		.byte	0x61
+ 422 02b6 9A000000 		.4byte	0x9a
+ 423 02ba 51       		.byte	0x51
+ 424 02bb 06       		.uleb128 0x6
+ 425 02bc C1080000 		.4byte	.LASF60
+ 426 02c0 03       		.byte	0x3
+ 427 02c1 62       		.byte	0x62
+ 428 02c2 9A000000 		.4byte	0x9a
+ 429 02c6 52       		.byte	0x52
+ 430 02c7 06       		.uleb128 0x6
+ 431 02c8 85090000 		.4byte	.LASF61
+ 432 02cc 03       		.byte	0x3
+ 433 02cd 63       		.byte	0x63
+ 434 02ce 9A000000 		.4byte	0x9a
+ 435 02d2 53       		.byte	0x53
+ 436 02d3 06       		.uleb128 0x6
+ 437 02d4 B7070000 		.4byte	.LASF62
+ 438 02d8 03       		.byte	0x3
+ 439 02d9 64       		.byte	0x64
+ 440 02da 9A000000 		.4byte	0x9a
+ 441 02de 54       		.byte	0x54
+ 442 02df 06       		.uleb128 0x6
+ 443 02e0 86010000 		.4byte	.LASF63
+ 444 02e4 03       		.byte	0x3
+ 445 02e5 65       		.byte	0x65
+ 446 02e6 9A000000 		.4byte	0x9a
+ 447 02ea 55       		.byte	0x55
+ 448 02eb 06       		.uleb128 0x6
+ 449 02ec 53080000 		.4byte	.LASF64
+ 450 02f0 03       		.byte	0x3
+ 451 02f1 66       		.byte	0x66
+ 452 02f2 9A000000 		.4byte	0x9a
+ 453 02f6 56       		.byte	0x56
+ 454 02f7 06       		.uleb128 0x6
+ 455 02f8 DB030000 		.4byte	.LASF65
+ 456 02fc 03       		.byte	0x3
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 9
+
+
+ 457 02fd 67       		.byte	0x67
+ 458 02fe 9A000000 		.4byte	0x9a
+ 459 0302 57       		.byte	0x57
+ 460 0303 06       		.uleb128 0x6
+ 461 0304 12000000 		.4byte	.LASF66
+ 462 0308 03       		.byte	0x3
+ 463 0309 68       		.byte	0x68
+ 464 030a 9A000000 		.4byte	0x9a
+ 465 030e 58       		.byte	0x58
+ 466 030f 06       		.uleb128 0x6
+ 467 0310 2A070000 		.4byte	.LASF67
+ 468 0314 03       		.byte	0x3
+ 469 0315 69       		.byte	0x69
+ 470 0316 9A000000 		.4byte	0x9a
+ 471 031a 59       		.byte	0x59
+ 472 031b 06       		.uleb128 0x6
+ 473 031c E8040000 		.4byte	.LASF68
+ 474 0320 03       		.byte	0x3
+ 475 0321 6E       		.byte	0x6e
+ 476 0322 B0000000 		.4byte	0xb0
+ 477 0326 5A       		.byte	0x5a
+ 478 0327 06       		.uleb128 0x6
+ 479 0328 72080000 		.4byte	.LASF69
+ 480 032c 03       		.byte	0x3
+ 481 032d 6F       		.byte	0x6f
+ 482 032e B0000000 		.4byte	0xb0
+ 483 0332 5C       		.byte	0x5c
+ 484 0333 06       		.uleb128 0x6
+ 485 0334 CA000000 		.4byte	.LASF70
+ 486 0338 03       		.byte	0x3
+ 487 0339 70       		.byte	0x70
+ 488 033a 9A000000 		.4byte	0x9a
+ 489 033e 5E       		.byte	0x5e
+ 490 033f 06       		.uleb128 0x6
+ 491 0340 A1060000 		.4byte	.LASF71
+ 492 0344 03       		.byte	0x3
+ 493 0345 71       		.byte	0x71
+ 494 0346 9A000000 		.4byte	0x9a
+ 495 034a 5F       		.byte	0x5f
+ 496 034b 06       		.uleb128 0x6
+ 497 034c 44050000 		.4byte	.LASF72
+ 498 0350 03       		.byte	0x3
+ 499 0351 72       		.byte	0x72
+ 500 0352 9A000000 		.4byte	0x9a
+ 501 0356 60       		.byte	0x60
+ 502 0357 06       		.uleb128 0x6
+ 503 0358 5B060000 		.4byte	.LASF73
+ 504 035c 03       		.byte	0x3
+ 505 035d 73       		.byte	0x73
+ 506 035e C6000000 		.4byte	0xc6
+ 507 0362 64       		.byte	0x64
+ 508 0363 06       		.uleb128 0x6
+ 509 0364 F0000000 		.4byte	.LASF74
+ 510 0368 03       		.byte	0x3
+ 511 0369 76       		.byte	0x76
+ 512 036a B0000000 		.4byte	0xb0
+ 513 036e 68       		.byte	0x68
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 10
+
+
+ 514 036f 06       		.uleb128 0x6
+ 515 0370 A3030000 		.4byte	.LASF75
+ 516 0374 03       		.byte	0x3
+ 517 0375 77       		.byte	0x77
+ 518 0376 B0000000 		.4byte	0xb0
+ 519 037a 6A       		.byte	0x6a
+ 520 037b 06       		.uleb128 0x6
+ 521 037c EF030000 		.4byte	.LASF76
+ 522 0380 03       		.byte	0x3
+ 523 0381 78       		.byte	0x78
+ 524 0382 B0000000 		.4byte	0xb0
+ 525 0386 6C       		.byte	0x6c
+ 526 0387 06       		.uleb128 0x6
+ 527 0388 17040000 		.4byte	.LASF77
+ 528 038c 03       		.byte	0x3
+ 529 038d 79       		.byte	0x79
+ 530 038e B0000000 		.4byte	0xb0
+ 531 0392 6E       		.byte	0x6e
+ 532 0393 06       		.uleb128 0x6
+ 533 0394 7A070000 		.4byte	.LASF78
+ 534 0398 03       		.byte	0x3
+ 535 0399 7B       		.byte	0x7b
+ 536 039a 9A000000 		.4byte	0x9a
+ 537 039e 70       		.byte	0x70
+ 538 039f 06       		.uleb128 0x6
+ 539 03a0 D0010000 		.4byte	.LASF79
+ 540 03a4 03       		.byte	0x3
+ 541 03a5 7C       		.byte	0x7c
+ 542 03a6 9A000000 		.4byte	0x9a
+ 543 03aa 71       		.byte	0x71
+ 544 03ab 06       		.uleb128 0x6
+ 545 03ac 6F090000 		.4byte	.LASF80
+ 546 03b0 03       		.byte	0x3
+ 547 03b1 7D       		.byte	0x7d
+ 548 03b2 9A000000 		.4byte	0x9a
+ 549 03b6 72       		.byte	0x72
+ 550 03b7 06       		.uleb128 0x6
+ 551 03b8 11050000 		.4byte	.LASF81
+ 552 03bc 03       		.byte	0x3
+ 553 03bd 7E       		.byte	0x7e
+ 554 03be 9A000000 		.4byte	0x9a
+ 555 03c2 73       		.byte	0x73
+ 556 03c3 06       		.uleb128 0x6
+ 557 03c4 C7070000 		.4byte	.LASF82
+ 558 03c8 03       		.byte	0x3
+ 559 03c9 80       		.byte	0x80
+ 560 03ca B0000000 		.4byte	0xb0
+ 561 03ce 74       		.byte	0x74
+ 562 03cf 06       		.uleb128 0x6
+ 563 03d0 24080000 		.4byte	.LASF83
+ 564 03d4 03       		.byte	0x3
+ 565 03d5 81       		.byte	0x81
+ 566 03d6 B0000000 		.4byte	0xb0
+ 567 03da 76       		.byte	0x76
+ 568 03db 06       		.uleb128 0x6
+ 569 03dc C1020000 		.4byte	.LASF84
+ 570 03e0 03       		.byte	0x3
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 11
+
+
+ 571 03e1 82       		.byte	0x82
+ 572 03e2 B0000000 		.4byte	0xb0
+ 573 03e6 78       		.byte	0x78
+ 574 03e7 06       		.uleb128 0x6
+ 575 03e8 94000000 		.4byte	.LASF85
+ 576 03ec 03       		.byte	0x3
+ 577 03ed 83       		.byte	0x83
+ 578 03ee B0000000 		.4byte	0xb0
+ 579 03f2 7A       		.byte	0x7a
+ 580 03f3 06       		.uleb128 0x6
+ 581 03f4 F9080000 		.4byte	.LASF86
+ 582 03f8 03       		.byte	0x3
+ 583 03f9 86       		.byte	0x86
+ 584 03fa 9A000000 		.4byte	0x9a
+ 585 03fe 7C       		.byte	0x7c
+ 586 03ff 06       		.uleb128 0x6
+ 587 0400 91080000 		.4byte	.LASF87
+ 588 0404 03       		.byte	0x3
+ 589 0405 87       		.byte	0x87
+ 590 0406 9A000000 		.4byte	0x9a
+ 591 040a 7D       		.byte	0x7d
+ 592 040b 06       		.uleb128 0x6
+ 593 040c 26000000 		.4byte	.LASF88
+ 594 0410 03       		.byte	0x3
+ 595 0411 88       		.byte	0x88
+ 596 0412 9A000000 		.4byte	0x9a
+ 597 0416 7E       		.byte	0x7e
+ 598 0417 06       		.uleb128 0x6
+ 599 0418 08030000 		.4byte	.LASF89
+ 600 041c 03       		.byte	0x3
+ 601 041d 89       		.byte	0x89
+ 602 041e 9A000000 		.4byte	0x9a
+ 603 0422 7F       		.byte	0x7f
+ 604 0423 06       		.uleb128 0x6
+ 605 0424 6D030000 		.4byte	.LASF90
+ 606 0428 03       		.byte	0x3
+ 607 0429 8A       		.byte	0x8a
+ 608 042a 9A000000 		.4byte	0x9a
+ 609 042e 80       		.byte	0x80
+ 610 042f 06       		.uleb128 0x6
+ 611 0430 9A040000 		.4byte	.LASF91
+ 612 0434 03       		.byte	0x3
+ 613 0435 8D       		.byte	0x8d
+ 614 0436 C6000000 		.4byte	0xc6
+ 615 043a 84       		.byte	0x84
+ 616 043b 06       		.uleb128 0x6
+ 617 043c A9000000 		.4byte	.LASF92
+ 618 0440 03       		.byte	0x3
+ 619 0441 8E       		.byte	0x8e
+ 620 0442 C6000000 		.4byte	0xc6
+ 621 0446 88       		.byte	0x88
+ 622 0447 06       		.uleb128 0x6
+ 623 0448 E4080000 		.4byte	.LASF93
+ 624 044c 03       		.byte	0x3
+ 625 044d 8F       		.byte	0x8f
+ 626 044e C6000000 		.4byte	0xc6
+ 627 0452 8C       		.byte	0x8c
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 12
+
+
+ 628 0453 06       		.uleb128 0x6
+ 629 0454 CA040000 		.4byte	.LASF94
+ 630 0458 03       		.byte	0x3
+ 631 0459 90       		.byte	0x90
+ 632 045a C6000000 		.4byte	0xc6
+ 633 045e 90       		.byte	0x90
+ 634 045f 06       		.uleb128 0x6
+ 635 0460 58030000 		.4byte	.LASF95
+ 636 0464 03       		.byte	0x3
+ 637 0465 91       		.byte	0x91
+ 638 0466 C6000000 		.4byte	0xc6
+ 639 046a 94       		.byte	0x94
+ 640 046b 06       		.uleb128 0x6
+ 641 046c 84040000 		.4byte	.LASF96
+ 642 0470 03       		.byte	0x3
+ 643 0471 92       		.byte	0x92
+ 644 0472 C6000000 		.4byte	0xc6
+ 645 0476 98       		.byte	0x98
+ 646 0477 06       		.uleb128 0x6
+ 647 0478 28090000 		.4byte	.LASF97
+ 648 047c 03       		.byte	0x3
+ 649 047d 93       		.byte	0x93
+ 650 047e C6000000 		.4byte	0xc6
+ 651 0482 9C       		.byte	0x9c
+ 652 0483 06       		.uleb128 0x6
+ 653 0484 00010000 		.4byte	.LASF98
+ 654 0488 03       		.byte	0x3
+ 655 0489 94       		.byte	0x94
+ 656 048a C6000000 		.4byte	0xc6
+ 657 048e A0       		.byte	0xa0
+ 658 048f 06       		.uleb128 0x6
+ 659 0490 1C020000 		.4byte	.LASF99
+ 660 0494 03       		.byte	0x3
+ 661 0495 95       		.byte	0x95
+ 662 0496 B0000000 		.4byte	0xb0
+ 663 049a A4       		.byte	0xa4
+ 664 049b 06       		.uleb128 0x6
+ 665 049c 6F040000 		.4byte	.LASF100
+ 666 04a0 03       		.byte	0x3
+ 667 04a1 96       		.byte	0x96
+ 668 04a2 B0000000 		.4byte	0xb0
+ 669 04a6 A6       		.byte	0xa6
+ 670 04a7 06       		.uleb128 0x6
+ 671 04a8 76060000 		.4byte	.LASF101
+ 672 04ac 03       		.byte	0x3
+ 673 04ad 97       		.byte	0x97
+ 674 04ae B0000000 		.4byte	0xb0
+ 675 04b2 A8       		.byte	0xa8
+ 676 04b3 06       		.uleb128 0x6
+ 677 04b4 0B080000 		.4byte	.LASF102
+ 678 04b8 03       		.byte	0x3
+ 679 04b9 98       		.byte	0x98
+ 680 04ba B0000000 		.4byte	0xb0
+ 681 04be AA       		.byte	0xaa
+ 682 04bf 06       		.uleb128 0x6
+ 683 04c0 FE030000 		.4byte	.LASF103
+ 684 04c4 03       		.byte	0x3
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 13
+
+
+ 685 04c5 99       		.byte	0x99
+ 686 04c6 B0000000 		.4byte	0xb0
+ 687 04ca AC       		.byte	0xac
+ 688 04cb 06       		.uleb128 0x6
+ 689 04cc 28050000 		.4byte	.LASF104
+ 690 04d0 03       		.byte	0x3
+ 691 04d1 9A       		.byte	0x9a
+ 692 04d2 B0000000 		.4byte	0xb0
+ 693 04d6 AE       		.byte	0xae
+ 694 04d7 06       		.uleb128 0x6
+ 695 04d8 86050000 		.4byte	.LASF105
+ 696 04dc 03       		.byte	0x3
+ 697 04dd 9D       		.byte	0x9d
+ 698 04de B0000000 		.4byte	0xb0
+ 699 04e2 B0       		.byte	0xb0
+ 700 04e3 06       		.uleb128 0x6
+ 701 04e4 39000000 		.4byte	.LASF106
+ 702 04e8 03       		.byte	0x3
+ 703 04e9 9E       		.byte	0x9e
+ 704 04ea C6000000 		.4byte	0xc6
+ 705 04ee B4       		.byte	0xb4
+ 706 04ef 00       		.byte	0
+ 707 04f0 03       		.uleb128 0x3
+ 708 04f1 3C040000 		.4byte	.LASF107
+ 709 04f5 03       		.byte	0x3
+ 710 04f6 9F       		.byte	0x9f
+ 711 04f7 DF000000 		.4byte	0xdf
+ 712 04fb 02       		.uleb128 0x2
+ 713 04fc 01       		.byte	0x1
+ 714 04fd 08       		.byte	0x8
+ 715 04fe FA070000 		.4byte	.LASF108
+ 716 0502 02       		.uleb128 0x2
+ 717 0503 04       		.byte	0x4
+ 718 0504 04       		.byte	0x4
+ 719 0505 55060000 		.4byte	.LASF109
+ 720 0509 02       		.uleb128 0x2
+ 721 050a 08       		.byte	0x8
+ 722 050b 04       		.byte	0x4
+ 723 050c BA020000 		.4byte	.LASF110
+ 724 0510 07       		.uleb128 0x7
+ 725 0511 01030000 		.4byte	.LASF111
+ 726 0515 04       		.byte	0x4
+ 727 0516 EC03     		.2byte	0x3ec
+ 728 0518 C6000000 		.4byte	0xc6
+ 729 051c 08       		.uleb128 0x8
+ 730 051d 01       		.byte	0x1
+ 731 051e 36000000 		.4byte	0x36
+ 732 0522 05       		.byte	0x5
+ 733 0523 1304     		.2byte	0x413
+ 734 0525 42050000 		.4byte	0x542
+ 735 0529 09       		.uleb128 0x9
+ 736 052a 3B020000 		.4byte	.LASF112
+ 737 052e 00       		.byte	0
+ 738 052f 09       		.uleb128 0x9
+ 739 0530 F5060000 		.4byte	.LASF113
+ 740 0534 01       		.byte	0x1
+ 741 0535 09       		.uleb128 0x9
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 14
+
+
+ 742 0536 97020000 		.4byte	.LASF114
+ 743 053a 02       		.byte	0x2
+ 744 053b 09       		.uleb128 0x9
+ 745 053c 0E090000 		.4byte	.LASF115
+ 746 0540 03       		.byte	0x3
+ 747 0541 00       		.byte	0
+ 748 0542 07       		.uleb128 0x7
+ 749 0543 E5010000 		.4byte	.LASF116
+ 750 0547 05       		.byte	0x5
+ 751 0548 1804     		.2byte	0x418
+ 752 054a 1C050000 		.4byte	0x51c
+ 753 054e 0A       		.uleb128 0xa
+ 754 054f 78       		.byte	0x78
+ 755 0550 05       		.byte	0x5
+ 756 0551 0205     		.2byte	0x502
+ 757 0553 1B060000 		.4byte	0x61b
+ 758 0557 0B       		.uleb128 0xb
+ 759 0558 4E080000 		.4byte	.LASF117
+ 760 055c 05       		.byte	0x5
+ 761 055d 0405     		.2byte	0x504
+ 762 055f C6000000 		.4byte	0xc6
+ 763 0563 00       		.byte	0
+ 764 0564 0B       		.uleb128 0xb
+ 765 0565 D1080000 		.4byte	.LASF118
+ 766 0569 05       		.byte	0x5
+ 767 056a 0505     		.2byte	0x505
+ 768 056c C6000000 		.4byte	0xc6
+ 769 0570 04       		.byte	0x4
+ 770 0571 0B       		.uleb128 0xb
+ 771 0572 E1020000 		.4byte	.LASF119
+ 772 0576 05       		.byte	0x5
+ 773 0577 0605     		.2byte	0x506
+ 774 0579 C6000000 		.4byte	0xc6
+ 775 057d 08       		.byte	0x8
+ 776 057e 0B       		.uleb128 0xb
+ 777 057f 04050000 		.4byte	.LASF120
+ 778 0583 05       		.byte	0x5
+ 779 0584 0705     		.2byte	0x507
+ 780 0586 C6000000 		.4byte	0xc6
+ 781 058a 0C       		.byte	0xc
+ 782 058b 0B       		.uleb128 0xb
+ 783 058c 0C040000 		.4byte	.LASF121
+ 784 0590 05       		.byte	0x5
+ 785 0591 0805     		.2byte	0x508
+ 786 0593 C6000000 		.4byte	0xc6
+ 787 0597 10       		.byte	0x10
+ 788 0598 0B       		.uleb128 0xb
+ 789 0599 A2080000 		.4byte	.LASF122
+ 790 059d 05       		.byte	0x5
+ 791 059e 0905     		.2byte	0x509
+ 792 05a0 42050000 		.4byte	0x542
+ 793 05a4 14       		.byte	0x14
+ 794 05a5 0B       		.uleb128 0xb
+ 795 05a6 E6060000 		.4byte	.LASF123
+ 796 05aa 05       		.byte	0x5
+ 797 05ab 0A05     		.2byte	0x50a
+ 798 05ad C6000000 		.4byte	0xc6
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 15
+
+
+ 799 05b1 18       		.byte	0x18
+ 800 05b2 0B       		.uleb128 0xb
+ 801 05b3 4C040000 		.4byte	.LASF124
+ 802 05b7 05       		.byte	0x5
+ 803 05b8 0B05     		.2byte	0x50b
+ 804 05ba 1B060000 		.4byte	0x61b
+ 805 05be 1C       		.byte	0x1c
+ 806 05bf 0B       		.uleb128 0xb
+ 807 05c0 71070000 		.4byte	.LASF125
+ 808 05c4 05       		.byte	0x5
+ 809 05c5 0C05     		.2byte	0x50c
+ 810 05c7 C6000000 		.4byte	0xc6
+ 811 05cb 5C       		.byte	0x5c
+ 812 05cc 0B       		.uleb128 0xb
+ 813 05cd 88000000 		.4byte	.LASF126
+ 814 05d1 05       		.byte	0x5
+ 815 05d2 0D05     		.2byte	0x50d
+ 816 05d4 C6000000 		.4byte	0xc6
+ 817 05d8 60       		.byte	0x60
+ 818 05d9 0B       		.uleb128 0xb
+ 819 05da 94050000 		.4byte	.LASF127
+ 820 05de 05       		.byte	0x5
+ 821 05df 0E05     		.2byte	0x50e
+ 822 05e1 C6000000 		.4byte	0xc6
+ 823 05e5 64       		.byte	0x64
+ 824 05e6 0B       		.uleb128 0xb
+ 825 05e7 67070000 		.4byte	.LASF128
+ 826 05eb 05       		.byte	0x5
+ 827 05ec 0F05     		.2byte	0x50f
+ 828 05ee C6000000 		.4byte	0xc6
+ 829 05f2 68       		.byte	0x68
+ 830 05f3 0B       		.uleb128 0xb
+ 831 05f4 4D090000 		.4byte	.LASF129
+ 832 05f8 05       		.byte	0x5
+ 833 05f9 1005     		.2byte	0x510
+ 834 05fb C6000000 		.4byte	0xc6
+ 835 05ff 6C       		.byte	0x6c
+ 836 0600 0B       		.uleb128 0xb
+ 837 0601 36050000 		.4byte	.LASF130
+ 838 0605 05       		.byte	0x5
+ 839 0606 1105     		.2byte	0x511
+ 840 0608 2B060000 		.4byte	0x62b
+ 841 060c 70       		.byte	0x70
+ 842 060d 0B       		.uleb128 0xb
+ 843 060e E2070000 		.4byte	.LASF131
+ 844 0612 05       		.byte	0x5
+ 845 0613 1205     		.2byte	0x512
+ 846 0615 C6000000 		.4byte	0xc6
+ 847 0619 74       		.byte	0x74
+ 848 061a 00       		.byte	0
+ 849 061b 0C       		.uleb128 0xc
+ 850 061c C6000000 		.4byte	0xc6
+ 851 0620 2B060000 		.4byte	0x62b
+ 852 0624 0D       		.uleb128 0xd
+ 853 0625 D1000000 		.4byte	0xd1
+ 854 0629 0F       		.byte	0xf
+ 855 062a 00       		.byte	0
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 16
+
+
+ 856 062b 02       		.uleb128 0x2
+ 857 062c 01       		.byte	0x1
+ 858 062d 02       		.byte	0x2
+ 859 062e 0E070000 		.4byte	.LASF132
+ 860 0632 07       		.uleb128 0x7
+ 861 0633 A2010000 		.4byte	.LASF133
+ 862 0637 05       		.byte	0x5
+ 863 0638 1305     		.2byte	0x513
+ 864 063a 4E050000 		.4byte	0x54e
+ 865 063e 05       		.uleb128 0x5
+ 866 063f 10       		.byte	0x10
+ 867 0640 06       		.byte	0x6
+ 868 0641 3B       		.byte	0x3b
+ 869 0642 77060000 		.4byte	0x677
+ 870 0646 06       		.uleb128 0x6
+ 871 0647 57040000 		.4byte	.LASF134
+ 872 064b 06       		.byte	0x6
+ 873 064c 3D       		.byte	0x3d
+ 874 064d C6000000 		.4byte	0xc6
+ 875 0651 00       		.byte	0
+ 876 0652 06       		.uleb128 0x6
+ 877 0653 30040000 		.4byte	.LASF135
+ 878 0657 06       		.byte	0x6
+ 879 0658 3E       		.byte	0x3e
+ 880 0659 C6000000 		.4byte	0xc6
+ 881 065d 04       		.byte	0x4
+ 882 065e 06       		.uleb128 0x6
+ 883 065f 42030000 		.4byte	.LASF136
+ 884 0663 06       		.byte	0x6
+ 885 0664 3F       		.byte	0x3f
+ 886 0665 77060000 		.4byte	0x677
+ 887 0669 08       		.byte	0x8
+ 888 066a 06       		.uleb128 0x6
+ 889 066b 67080000 		.4byte	.LASF137
+ 890 066f 06       		.byte	0x6
+ 891 0670 40       		.byte	0x40
+ 892 0671 C6000000 		.4byte	0xc6
+ 893 0675 0C       		.byte	0xc
+ 894 0676 00       		.byte	0
+ 895 0677 0E       		.uleb128 0xe
+ 896 0678 04       		.byte	0x4
+ 897 0679 7D060000 		.4byte	0x67d
+ 898 067d 0F       		.uleb128 0xf
+ 899 067e 32060000 		.4byte	0x632
+ 900 0682 03       		.uleb128 0x3
+ 901 0683 82060000 		.4byte	.LASF138
+ 902 0687 06       		.byte	0x6
+ 903 0688 48       		.byte	0x48
+ 904 0689 3E060000 		.4byte	0x63e
+ 905 068d 0C       		.uleb128 0xc
+ 906 068e 7D060000 		.4byte	0x67d
+ 907 0692 9D060000 		.4byte	0x69d
+ 908 0696 0D       		.uleb128 0xd
+ 909 0697 D1000000 		.4byte	0xd1
+ 910 069b 00       		.byte	0
+ 911 069c 00       		.byte	0
+ 912 069d 10       		.uleb128 0x10
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 17
+
+
+ 913 069e 8E070000 		.4byte	.LASF146
+ 914 06a2 08       		.byte	0x8
+ 915 06a3 2A       		.byte	0x2a
+ 916 06a4 AE060000 		.4byte	0x6ae
+ 917 06a8 05       		.uleb128 0x5
+ 918 06a9 03       		.byte	0x3
+ 919 06aa 10000000 		.4byte	OSCILLOSCOPE_ADC_hwConfigs
+ 920 06ae 0F       		.uleb128 0xf
+ 921 06af 8D060000 		.4byte	0x68d
+ 922 06b3 11       		.uleb128 0x11
+ 923 06b4 16010000 		.4byte	.LASF139
+ 924 06b8 07       		.byte	0x7
+ 925 06b9 F907     		.2byte	0x7f9
+ 926 06bb BF060000 		.4byte	0x6bf
+ 927 06bf 12       		.uleb128 0x12
+ 928 06c0 BB000000 		.4byte	0xbb
+ 929 06c4 13       		.uleb128 0x13
+ 930 06c5 6C060000 		.4byte	.LASF140
+ 931 06c9 03       		.byte	0x3
+ 932 06ca A7       		.byte	0xa7
+ 933 06cb CF060000 		.4byte	0x6cf
+ 934 06cf 0E       		.uleb128 0xe
+ 935 06d0 04       		.byte	0x4
+ 936 06d1 D5060000 		.4byte	0x6d5
+ 937 06d5 0F       		.uleb128 0xf
+ 938 06d6 F0040000 		.4byte	0x4f0
+ 939 06da 11       		.uleb128 0x11
+ 940 06db 3E070000 		.4byte	.LASF141
+ 941 06df 06       		.byte	0x6
+ 942 06e0 6001     		.2byte	0x160
+ 943 06e2 C6000000 		.4byte	0xc6
+ 944 06e6 0C       		.uleb128 0xc
+ 945 06e7 F6060000 		.4byte	0x6f6
+ 946 06eb F6060000 		.4byte	0x6f6
+ 947 06ef 0D       		.uleb128 0xd
+ 948 06f0 D1000000 		.4byte	0xd1
+ 949 06f4 00       		.byte	0
+ 950 06f5 00       		.byte	0
+ 951 06f6 0F       		.uleb128 0xf
+ 952 06f7 82060000 		.4byte	0x682
+ 953 06fb 14       		.uleb128 0x14
+ 954 06fc 53020000 		.4byte	.LASF142
+ 955 0700 08       		.byte	0x8
+ 956 0701 8F       		.byte	0x8f
+ 957 0702 0C070000 		.4byte	0x70c
+ 958 0706 05       		.uleb128 0x5
+ 959 0707 03       		.byte	0x3
+ 960 0708 00000000 		.4byte	OSCILLOSCOPE_ADC_allConfigs
+ 961 070c 0F       		.uleb128 0xf
+ 962 070d E6060000 		.4byte	0x6e6
+ 963 0711 00       		.byte	0
+ 964              		.section	.debug_abbrev,"",%progbits
+ 965              	.Ldebug_abbrev0:
+ 966 0000 01       		.uleb128 0x1
+ 967 0001 11       		.uleb128 0x11
+ 968 0002 01       		.byte	0x1
+ 969 0003 25       		.uleb128 0x25
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 18
+
+
+ 970 0004 0E       		.uleb128 0xe
+ 971 0005 13       		.uleb128 0x13
+ 972 0006 0B       		.uleb128 0xb
+ 973 0007 03       		.uleb128 0x3
+ 974 0008 0E       		.uleb128 0xe
+ 975 0009 1B       		.uleb128 0x1b
+ 976 000a 0E       		.uleb128 0xe
+ 977 000b 10       		.uleb128 0x10
+ 978 000c 17       		.uleb128 0x17
+ 979 000d 00       		.byte	0
+ 980 000e 00       		.byte	0
+ 981 000f 02       		.uleb128 0x2
+ 982 0010 24       		.uleb128 0x24
+ 983 0011 00       		.byte	0
+ 984 0012 0B       		.uleb128 0xb
+ 985 0013 0B       		.uleb128 0xb
+ 986 0014 3E       		.uleb128 0x3e
+ 987 0015 0B       		.uleb128 0xb
+ 988 0016 03       		.uleb128 0x3
+ 989 0017 0E       		.uleb128 0xe
+ 990 0018 00       		.byte	0
+ 991 0019 00       		.byte	0
+ 992 001a 03       		.uleb128 0x3
+ 993 001b 16       		.uleb128 0x16
+ 994 001c 00       		.byte	0
+ 995 001d 03       		.uleb128 0x3
+ 996 001e 0E       		.uleb128 0xe
+ 997 001f 3A       		.uleb128 0x3a
+ 998 0020 0B       		.uleb128 0xb
+ 999 0021 3B       		.uleb128 0x3b
+ 1000 0022 0B       		.uleb128 0xb
+ 1001 0023 49       		.uleb128 0x49
+ 1002 0024 13       		.uleb128 0x13
+ 1003 0025 00       		.byte	0
+ 1004 0026 00       		.byte	0
+ 1005 0027 04       		.uleb128 0x4
+ 1006 0028 24       		.uleb128 0x24
+ 1007 0029 00       		.byte	0
+ 1008 002a 0B       		.uleb128 0xb
+ 1009 002b 0B       		.uleb128 0xb
+ 1010 002c 3E       		.uleb128 0x3e
+ 1011 002d 0B       		.uleb128 0xb
+ 1012 002e 03       		.uleb128 0x3
+ 1013 002f 08       		.uleb128 0x8
+ 1014 0030 00       		.byte	0
+ 1015 0031 00       		.byte	0
+ 1016 0032 05       		.uleb128 0x5
+ 1017 0033 13       		.uleb128 0x13
+ 1018 0034 01       		.byte	0x1
+ 1019 0035 0B       		.uleb128 0xb
+ 1020 0036 0B       		.uleb128 0xb
+ 1021 0037 3A       		.uleb128 0x3a
+ 1022 0038 0B       		.uleb128 0xb
+ 1023 0039 3B       		.uleb128 0x3b
+ 1024 003a 0B       		.uleb128 0xb
+ 1025 003b 01       		.uleb128 0x1
+ 1026 003c 13       		.uleb128 0x13
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 19
+
+
+ 1027 003d 00       		.byte	0
+ 1028 003e 00       		.byte	0
+ 1029 003f 06       		.uleb128 0x6
+ 1030 0040 0D       		.uleb128 0xd
+ 1031 0041 00       		.byte	0
+ 1032 0042 03       		.uleb128 0x3
+ 1033 0043 0E       		.uleb128 0xe
+ 1034 0044 3A       		.uleb128 0x3a
+ 1035 0045 0B       		.uleb128 0xb
+ 1036 0046 3B       		.uleb128 0x3b
+ 1037 0047 0B       		.uleb128 0xb
+ 1038 0048 49       		.uleb128 0x49
+ 1039 0049 13       		.uleb128 0x13
+ 1040 004a 38       		.uleb128 0x38
+ 1041 004b 0B       		.uleb128 0xb
+ 1042 004c 00       		.byte	0
+ 1043 004d 00       		.byte	0
+ 1044 004e 07       		.uleb128 0x7
+ 1045 004f 16       		.uleb128 0x16
+ 1046 0050 00       		.byte	0
+ 1047 0051 03       		.uleb128 0x3
+ 1048 0052 0E       		.uleb128 0xe
+ 1049 0053 3A       		.uleb128 0x3a
+ 1050 0054 0B       		.uleb128 0xb
+ 1051 0055 3B       		.uleb128 0x3b
+ 1052 0056 05       		.uleb128 0x5
+ 1053 0057 49       		.uleb128 0x49
+ 1054 0058 13       		.uleb128 0x13
+ 1055 0059 00       		.byte	0
+ 1056 005a 00       		.byte	0
+ 1057 005b 08       		.uleb128 0x8
+ 1058 005c 04       		.uleb128 0x4
+ 1059 005d 01       		.byte	0x1
+ 1060 005e 0B       		.uleb128 0xb
+ 1061 005f 0B       		.uleb128 0xb
+ 1062 0060 49       		.uleb128 0x49
+ 1063 0061 13       		.uleb128 0x13
+ 1064 0062 3A       		.uleb128 0x3a
+ 1065 0063 0B       		.uleb128 0xb
+ 1066 0064 3B       		.uleb128 0x3b
+ 1067 0065 05       		.uleb128 0x5
+ 1068 0066 01       		.uleb128 0x1
+ 1069 0067 13       		.uleb128 0x13
+ 1070 0068 00       		.byte	0
+ 1071 0069 00       		.byte	0
+ 1072 006a 09       		.uleb128 0x9
+ 1073 006b 28       		.uleb128 0x28
+ 1074 006c 00       		.byte	0
+ 1075 006d 03       		.uleb128 0x3
+ 1076 006e 0E       		.uleb128 0xe
+ 1077 006f 1C       		.uleb128 0x1c
+ 1078 0070 0B       		.uleb128 0xb
+ 1079 0071 00       		.byte	0
+ 1080 0072 00       		.byte	0
+ 1081 0073 0A       		.uleb128 0xa
+ 1082 0074 13       		.uleb128 0x13
+ 1083 0075 01       		.byte	0x1
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 20
+
+
+ 1084 0076 0B       		.uleb128 0xb
+ 1085 0077 0B       		.uleb128 0xb
+ 1086 0078 3A       		.uleb128 0x3a
+ 1087 0079 0B       		.uleb128 0xb
+ 1088 007a 3B       		.uleb128 0x3b
+ 1089 007b 05       		.uleb128 0x5
+ 1090 007c 01       		.uleb128 0x1
+ 1091 007d 13       		.uleb128 0x13
+ 1092 007e 00       		.byte	0
+ 1093 007f 00       		.byte	0
+ 1094 0080 0B       		.uleb128 0xb
+ 1095 0081 0D       		.uleb128 0xd
+ 1096 0082 00       		.byte	0
+ 1097 0083 03       		.uleb128 0x3
+ 1098 0084 0E       		.uleb128 0xe
+ 1099 0085 3A       		.uleb128 0x3a
+ 1100 0086 0B       		.uleb128 0xb
+ 1101 0087 3B       		.uleb128 0x3b
+ 1102 0088 05       		.uleb128 0x5
+ 1103 0089 49       		.uleb128 0x49
+ 1104 008a 13       		.uleb128 0x13
+ 1105 008b 38       		.uleb128 0x38
+ 1106 008c 0B       		.uleb128 0xb
+ 1107 008d 00       		.byte	0
+ 1108 008e 00       		.byte	0
+ 1109 008f 0C       		.uleb128 0xc
+ 1110 0090 01       		.uleb128 0x1
+ 1111 0091 01       		.byte	0x1
+ 1112 0092 49       		.uleb128 0x49
+ 1113 0093 13       		.uleb128 0x13
+ 1114 0094 01       		.uleb128 0x1
+ 1115 0095 13       		.uleb128 0x13
+ 1116 0096 00       		.byte	0
+ 1117 0097 00       		.byte	0
+ 1118 0098 0D       		.uleb128 0xd
+ 1119 0099 21       		.uleb128 0x21
+ 1120 009a 00       		.byte	0
+ 1121 009b 49       		.uleb128 0x49
+ 1122 009c 13       		.uleb128 0x13
+ 1123 009d 2F       		.uleb128 0x2f
+ 1124 009e 0B       		.uleb128 0xb
+ 1125 009f 00       		.byte	0
+ 1126 00a0 00       		.byte	0
+ 1127 00a1 0E       		.uleb128 0xe
+ 1128 00a2 0F       		.uleb128 0xf
+ 1129 00a3 00       		.byte	0
+ 1130 00a4 0B       		.uleb128 0xb
+ 1131 00a5 0B       		.uleb128 0xb
+ 1132 00a6 49       		.uleb128 0x49
+ 1133 00a7 13       		.uleb128 0x13
+ 1134 00a8 00       		.byte	0
+ 1135 00a9 00       		.byte	0
+ 1136 00aa 0F       		.uleb128 0xf
+ 1137 00ab 26       		.uleb128 0x26
+ 1138 00ac 00       		.byte	0
+ 1139 00ad 49       		.uleb128 0x49
+ 1140 00ae 13       		.uleb128 0x13
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 21
+
+
+ 1141 00af 00       		.byte	0
+ 1142 00b0 00       		.byte	0
+ 1143 00b1 10       		.uleb128 0x10
+ 1144 00b2 34       		.uleb128 0x34
+ 1145 00b3 00       		.byte	0
+ 1146 00b4 03       		.uleb128 0x3
+ 1147 00b5 0E       		.uleb128 0xe
+ 1148 00b6 3A       		.uleb128 0x3a
+ 1149 00b7 0B       		.uleb128 0xb
+ 1150 00b8 3B       		.uleb128 0x3b
+ 1151 00b9 0B       		.uleb128 0xb
+ 1152 00ba 49       		.uleb128 0x49
+ 1153 00bb 13       		.uleb128 0x13
+ 1154 00bc 02       		.uleb128 0x2
+ 1155 00bd 18       		.uleb128 0x18
+ 1156 00be 00       		.byte	0
+ 1157 00bf 00       		.byte	0
+ 1158 00c0 11       		.uleb128 0x11
+ 1159 00c1 34       		.uleb128 0x34
+ 1160 00c2 00       		.byte	0
+ 1161 00c3 03       		.uleb128 0x3
+ 1162 00c4 0E       		.uleb128 0xe
+ 1163 00c5 3A       		.uleb128 0x3a
+ 1164 00c6 0B       		.uleb128 0xb
+ 1165 00c7 3B       		.uleb128 0x3b
+ 1166 00c8 05       		.uleb128 0x5
+ 1167 00c9 49       		.uleb128 0x49
+ 1168 00ca 13       		.uleb128 0x13
+ 1169 00cb 3F       		.uleb128 0x3f
+ 1170 00cc 19       		.uleb128 0x19
+ 1171 00cd 3C       		.uleb128 0x3c
+ 1172 00ce 19       		.uleb128 0x19
+ 1173 00cf 00       		.byte	0
+ 1174 00d0 00       		.byte	0
+ 1175 00d1 12       		.uleb128 0x12
+ 1176 00d2 35       		.uleb128 0x35
+ 1177 00d3 00       		.byte	0
+ 1178 00d4 49       		.uleb128 0x49
+ 1179 00d5 13       		.uleb128 0x13
+ 1180 00d6 00       		.byte	0
+ 1181 00d7 00       		.byte	0
+ 1182 00d8 13       		.uleb128 0x13
+ 1183 00d9 34       		.uleb128 0x34
+ 1184 00da 00       		.byte	0
+ 1185 00db 03       		.uleb128 0x3
+ 1186 00dc 0E       		.uleb128 0xe
+ 1187 00dd 3A       		.uleb128 0x3a
+ 1188 00de 0B       		.uleb128 0xb
+ 1189 00df 3B       		.uleb128 0x3b
+ 1190 00e0 0B       		.uleb128 0xb
+ 1191 00e1 49       		.uleb128 0x49
+ 1192 00e2 13       		.uleb128 0x13
+ 1193 00e3 3F       		.uleb128 0x3f
+ 1194 00e4 19       		.uleb128 0x19
+ 1195 00e5 3C       		.uleb128 0x3c
+ 1196 00e6 19       		.uleb128 0x19
+ 1197 00e7 00       		.byte	0
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 22
+
+
+ 1198 00e8 00       		.byte	0
+ 1199 00e9 14       		.uleb128 0x14
+ 1200 00ea 34       		.uleb128 0x34
+ 1201 00eb 00       		.byte	0
+ 1202 00ec 03       		.uleb128 0x3
+ 1203 00ed 0E       		.uleb128 0xe
+ 1204 00ee 3A       		.uleb128 0x3a
+ 1205 00ef 0B       		.uleb128 0xb
+ 1206 00f0 3B       		.uleb128 0x3b
+ 1207 00f1 0B       		.uleb128 0xb
+ 1208 00f2 49       		.uleb128 0x49
+ 1209 00f3 13       		.uleb128 0x13
+ 1210 00f4 3F       		.uleb128 0x3f
+ 1211 00f5 19       		.uleb128 0x19
+ 1212 00f6 02       		.uleb128 0x2
+ 1213 00f7 18       		.uleb128 0x18
+ 1214 00f8 00       		.byte	0
+ 1215 00f9 00       		.byte	0
+ 1216 00fa 00       		.byte	0
+ 1217              		.section	.debug_aranges,"",%progbits
+ 1218 0000 14000000 		.4byte	0x14
+ 1219 0004 0200     		.2byte	0x2
+ 1220 0006 00000000 		.4byte	.Ldebug_info0
+ 1221 000a 04       		.byte	0x4
+ 1222 000b 00       		.byte	0
+ 1223 000c 0000     		.2byte	0
+ 1224 000e 0000     		.2byte	0
+ 1225 0010 00000000 		.4byte	0
+ 1226 0014 00000000 		.4byte	0
+ 1227              		.section	.debug_line,"",%progbits
+ 1228              	.Ldebug_line0:
+ 1229 0000 5B020000 		.section	.debug_str,"MS",%progbits,1
+ 1229      02005502 
+ 1229      00000201 
+ 1229      FB0E0D00 
+ 1229      01010101 
+ 1230              	.LASF56:
+ 1231 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 1231      4275734D 
+ 1231      61737465 
+ 1231      724D6173 
+ 1231      6B00
+ 1232              	.LASF66:
+ 1233 0012 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 1233      6843746C 
+ 1233      4D61696E 
+ 1233      57733346 
+ 1233      72657100 
+ 1234              	.LASF88:
+ 1235 0026 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 1235      50727443 
+ 1235      6667496E 
+ 1235      4F666673 
+ 1235      657400
+ 1236              	.LASF106:
+ 1237 0039 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 1237      6F636B53 
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 23
+
+
+ 1237      74617475 
+ 1237      734F6666 
+ 1237      73657400 
+ 1238              	.LASF32:
+ 1239 004d 63727970 		.ascii	"cryptoVersion\000"
+ 1239      746F5665 
+ 1239      7273696F 
+ 1239      6E00
+ 1240              	.LASF50:
+ 1241 005b 70657269 		.ascii	"periClockNr\000"
+ 1241      436C6F63 
+ 1241      6B4E7200 
+ 1242              	.LASF28:
+ 1243 0067 70617373 		.ascii	"passBase\000"
+ 1243      42617365 
+ 1243      00
+ 1244              	.LASF41:
+ 1245 0070 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 1245      73497063 
+ 1245      4972714E 
+ 1245      7200
+ 1246              	.LASF3:
+ 1247 007e 5F5F7569 		.ascii	"__uint8_t\000"
+ 1247      6E74385F 
+ 1247      7400
+ 1248              	.LASF126:
+ 1249 0088 73617449 		.ascii	"satIntrMask\000"
+ 1249      6E74724D 
+ 1249      61736B00 
+ 1250              	.LASF85:
+ 1251 0094 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 1251      44697632 
+ 1251      345F3543 
+ 1251      746C4F66 
+ 1251      66736574 
+ 1252              	.LASF92:
+ 1253 00a9 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 1253      73436D34 
+ 1253      436C6F63 
+ 1253      6B43746C 
+ 1253      4F666673 
+ 1254              	.LASF21:
+ 1255 00c0 63707573 		.ascii	"cpussBase\000"
+ 1255      73426173 
+ 1255      6500
+ 1256              	.LASF70:
+ 1257 00ca 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 1257      43746C50 
+ 1257      72696F50 
+ 1257      6F7300
+ 1258              	.LASF12:
+ 1259 00d9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1259      206C6F6E 
+ 1259      6720756E 
+ 1259      7369676E 
+ 1259      65642069 
+ 1260              	.LASF74:
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 24
+
+
+ 1261 00f0 70657269 		.ascii	"periTrCmdOffset\000"
+ 1261      5472436D 
+ 1261      644F6666 
+ 1261      73657400 
+ 1262              	.LASF98:
+ 1263 0100 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 1263      73537973 
+ 1263      5469636B 
+ 1263      43746C4F 
+ 1263      66667365 
+ 1264              	.LASF139:
+ 1265 0116 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1265      52784275 
+ 1265      66666572 
+ 1265      00
+ 1266              	.LASF145:
+ 1267 0123 433A5C55 		.ascii	"C:\\Users\\Ramon\\Desktop\\byte-oscilloscope-fw\\Os"
+ 1267      73657273 
+ 1267      5C52616D 
+ 1267      6F6E5C44 
+ 1267      65736B74 
+ 1268 0151 63696C6C 		.ascii	"cilloscope\\Byte-Oscilloscope.cydsn\000"
+ 1268      6F73636F 
+ 1268      70655C42 
+ 1268      7974652D 
+ 1268      4F736369 
+ 1269              	.LASF59:
+ 1270 0174 666C6173 		.ascii	"flashPipeRequired\000"
+ 1270      68506970 
+ 1270      65526571 
+ 1270      75697265 
+ 1270      6400
+ 1271              	.LASF63:
+ 1272 0186 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 1272      6843746C 
+ 1272      4D61696E 
+ 1272      57733046 
+ 1272      72657100 
+ 1273              	.LASF15:
+ 1274 019a 696E7431 		.ascii	"int16_t\000"
+ 1274      365F7400 
+ 1275              	.LASF133:
+ 1276 01a2 63795F73 		.ascii	"cy_stc_sar_config_t\000"
+ 1276      74635F73 
+ 1276      61725F63 
+ 1276      6F6E6669 
+ 1276      675F7400 
+ 1277              	.LASF11:
+ 1278 01b6 6C6F6E67 		.ascii	"long long int\000"
+ 1278      206C6F6E 
+ 1278      6720696E 
+ 1278      7400
+ 1279              	.LASF1:
+ 1280 01c4 7369676E 		.ascii	"signed char\000"
+ 1280      65642063 
+ 1280      68617200 
+ 1281              	.LASF79:
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 25
+
+
+ 1282 01d0 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 1282      44697643 
+ 1282      6D645479 
+ 1282      70655365 
+ 1282      6C506F73 
+ 1283              	.LASF116:
+ 1284 01e5 63795F65 		.ascii	"cy_en_sar_range_detect_condition_t\000"
+ 1284      6E5F7361 
+ 1284      725F7261 
+ 1284      6E67655F 
+ 1284      64657465 
+ 1285              	.LASF25:
+ 1286 0208 70726F74 		.ascii	"protBase\000"
+ 1286      42617365 
+ 1286      00
+ 1287              	.LASF37:
+ 1288 0211 69706356 		.ascii	"ipcVersion\000"
+ 1288      65727369 
+ 1288      6F6E00
+ 1289              	.LASF99:
+ 1290 021c 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 1290      73436D30 
+ 1290      4E6D6943 
+ 1290      746C4F66 
+ 1290      66736574 
+ 1291              	.LASF26:
+ 1292 0231 6873696F 		.ascii	"hsiomBase\000"
+ 1292      6D426173 
+ 1292      6500
+ 1293              	.LASF112:
+ 1294 023b 43595F53 		.ascii	"CY_SAR_RANGE_COND_BELOW\000"
+ 1294      41525F52 
+ 1294      414E4745 
+ 1294      5F434F4E 
+ 1294      445F4245 
+ 1295              	.LASF142:
+ 1296 0253 4F534349 		.ascii	"OSCILLOSCOPE_ADC_allConfigs\000"
+ 1296      4C4C4F53 
+ 1296      434F5045 
+ 1296      5F414443 
+ 1296      5F616C6C 
+ 1297              	.LASF57:
+ 1298 026f 63727970 		.ascii	"cryptoMemSize\000"
+ 1298      746F4D65 
+ 1298      6D53697A 
+ 1298      6500
+ 1299              	.LASF23:
+ 1300 027d 70657269 		.ascii	"periBase\000"
+ 1300      42617365 
+ 1300      00
+ 1301              	.LASF55:
+ 1302 0286 73797350 		.ascii	"sysPmSimoPresent\000"
+ 1302      6D53696D 
+ 1302      6F507265 
+ 1302      73656E74 
+ 1302      00
+ 1303              	.LASF114:
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 26
+
+
+ 1304 0297 43595F53 		.ascii	"CY_SAR_RANGE_COND_ABOVE\000"
+ 1304      41525F52 
+ 1304      414E4745 
+ 1304      5F434F4E 
+ 1304      445F4142 
+ 1305              	.LASF45:
+ 1306 02af 63707573 		.ascii	"cpussFmIrq\000"
+ 1306      73466D49 
+ 1306      727100
+ 1307              	.LASF110:
+ 1308 02ba 646F7562 		.ascii	"double\000"
+ 1308      6C6500
+ 1309              	.LASF84:
+ 1310 02c1 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 1310      44697631 
+ 1310      365F3543 
+ 1310      746C4F66 
+ 1310      66736574 
+ 1311              	.LASF48:
+ 1312 02d6 73727373 		.ascii	"srssNumPll\000"
+ 1312      4E756D50 
+ 1312      6C6C00
+ 1313              	.LASF119:
+ 1314 02e1 73616D70 		.ascii	"sampleTime01\000"
+ 1314      6C655469 
+ 1314      6D653031 
+ 1314      00
+ 1315              	.LASF6:
+ 1316 02ee 73686F72 		.ascii	"short unsigned int\000"
+ 1316      7420756E 
+ 1316      7369676E 
+ 1316      65642069 
+ 1316      6E7400
+ 1317              	.LASF111:
+ 1318 0301 75696E74 		.ascii	"uint32\000"
+ 1318      333200
+ 1319              	.LASF89:
+ 1320 0308 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 1320      50727443 
+ 1320      66674F75 
+ 1320      744F6666 
+ 1320      73657400 
+ 1321              	.LASF22:
+ 1322 031c 666C6173 		.ascii	"flashcBase\000"
+ 1322      68634261 
+ 1322      736500
+ 1323              	.LASF9:
+ 1324 0327 5F5F7569 		.ascii	"__uint32_t\000"
+ 1324      6E743332 
+ 1324      5F7400
+ 1325              	.LASF52:
+ 1326 0332 70617373 		.ascii	"passSarChannels\000"
+ 1326      53617243 
+ 1326      68616E6E 
+ 1326      656C7300 
+ 1327              	.LASF136:
+ 1328 0342 6877436F 		.ascii	"hwConfigStc\000"
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 27
+
+
+ 1328      6E666967 
+ 1328      53746300 
+ 1329              	.LASF4:
+ 1330 034e 5F5F696E 		.ascii	"__int16_t\000"
+ 1330      7431365F 
+ 1330      7400
+ 1331              	.LASF95:
+ 1332 0358 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 1332      73436D34 
+ 1332      50777243 
+ 1332      746C4F66 
+ 1332      66736574 
+ 1333              	.LASF90:
+ 1334 036d 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 1334      50727443 
+ 1334      66675369 
+ 1334      6F4F6666 
+ 1334      73657400 
+ 1335              	.LASF42:
+ 1336 0381 63707573 		.ascii	"cpussDwChNr\000"
+ 1336      73447743 
+ 1336      684E7200 
+ 1337              	.LASF13:
+ 1338 038d 756E7369 		.ascii	"unsigned int\000"
+ 1338      676E6564 
+ 1338      20696E74 
+ 1338      00
+ 1339              	.LASF16:
+ 1340 039a 75696E74 		.ascii	"uint16_t\000"
+ 1340      31365F74 
+ 1340      00
+ 1341              	.LASF75:
+ 1342 03a3 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 1342      5472436D 
+ 1342      64477253 
+ 1342      656C4D73 
+ 1342      6B00
+ 1343              	.LASF10:
+ 1344 03b5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1344      20756E73 
+ 1344      69676E65 
+ 1344      6420696E 
+ 1344      7400
+ 1345              	.LASF40:
+ 1346 03c7 63707573 		.ascii	"cpussIpcNr\000"
+ 1346      73497063 
+ 1346      4E7200
+ 1347              	.LASF27:
+ 1348 03d2 6770696F 		.ascii	"gpioBase\000"
+ 1348      42617365 
+ 1348      00
+ 1349              	.LASF65:
+ 1350 03db 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 1350      6843746C 
+ 1350      4D61696E 
+ 1350      57733246 
+ 1350      72657100 
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 28
+
+
+ 1351              	.LASF76:
+ 1352 03ef 70657269 		.ascii	"periTrGrOffset\000"
+ 1352      54724772 
+ 1352      4F666673 
+ 1352      657400
+ 1353              	.LASF103:
+ 1354 03fe 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 1354      7352616D 
+ 1354      3143746C 
+ 1354      3000
+ 1355              	.LASF121:
+ 1356 040c 72616E67 		.ascii	"rangeThres\000"
+ 1356      65546872 
+ 1356      657300
+ 1357              	.LASF77:
+ 1358 0417 70657269 		.ascii	"periTrGrSize\000"
+ 1358      54724772 
+ 1358      53697A65 
+ 1358      00
+ 1359              	.LASF35:
+ 1360 0424 6770696F 		.ascii	"gpioVersion\000"
+ 1360      56657273 
+ 1360      696F6E00 
+ 1361              	.LASF135:
+ 1362 0430 6E756D43 		.ascii	"numChannels\000"
+ 1362      68616E6E 
+ 1362      656C7300 
+ 1363              	.LASF107:
+ 1364 043c 63795F73 		.ascii	"cy_stc_device_t\000"
+ 1364      74635F64 
+ 1364      65766963 
+ 1364      655F7400 
+ 1365              	.LASF124:
+ 1366 044c 6368616E 		.ascii	"chanConfig\000"
+ 1366      436F6E66 
+ 1366      696700
+ 1367              	.LASF134:
+ 1368 0457 6368616E 		.ascii	"channelBase\000"
+ 1368      6E656C42 
+ 1368      61736500 
+ 1369              	.LASF53:
+ 1370 0463 65704D6F 		.ascii	"epMonitorNr\000"
+ 1370      6E69746F 
+ 1370      724E7200 
+ 1371              	.LASF100:
+ 1372 046f 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 1372      73436D34 
+ 1372      4E6D6943 
+ 1372      746C4F66 
+ 1372      66736574 
+ 1373              	.LASF96:
+ 1374 0484 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 1374      73547269 
+ 1374      6D52616D 
+ 1374      43746C4F 
+ 1374      66667365 
+ 1375              	.LASF91:
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 29
+
+
+ 1376 049a 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 1376      73436D30 
+ 1376      436C6F63 
+ 1376      6B43746C 
+ 1376      4F666673 
+ 1377              	.LASF31:
+ 1378 04b1 63707573 		.ascii	"cpussVersion\000"
+ 1378      73566572 
+ 1378      73696F6E 
+ 1378      00
+ 1379              	.LASF38:
+ 1380 04be 70657269 		.ascii	"periVersion\000"
+ 1380      56657273 
+ 1380      696F6E00 
+ 1381              	.LASF94:
+ 1382 04ca 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 1382      73436D30 
+ 1382      53746174 
+ 1382      75734F66 
+ 1382      66736574 
+ 1383              	.LASF19:
+ 1384 04df 73697A65 		.ascii	"sizetype\000"
+ 1384      74797065 
+ 1384      00
+ 1385              	.LASF68:
+ 1386 04e8 64774368 		.ascii	"dwChOffset\000"
+ 1386      4F666673 
+ 1386      657400
+ 1387              	.LASF43:
+ 1388 04f3 63707573 		.ascii	"cpussFlashPaSize\000"
+ 1388      73466C61 
+ 1388      73685061 
+ 1388      53697A65 
+ 1388      00
+ 1389              	.LASF120:
+ 1390 0504 73616D70 		.ascii	"sampleTime23\000"
+ 1390      6C655469 
+ 1390      6D653233 
+ 1390      00
+ 1391              	.LASF81:
+ 1392 0511 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 1392      44697643 
+ 1392      6D645061 
+ 1392      54797065 
+ 1392      53656C50 
+ 1393              	.LASF104:
+ 1394 0528 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 1394      7352616D 
+ 1394      3243746C 
+ 1394      3000
+ 1395              	.LASF130:
+ 1396 0536 636F6E66 		.ascii	"configRouting\000"
+ 1396      6967526F 
+ 1396      7574696E 
+ 1396      6700
+ 1397              	.LASF72:
+ 1398 0544 64775374 		.ascii	"dwStatusChIdxPos\000"
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 30
+
+
+ 1398      61747573 
+ 1398      43684964 
+ 1398      78506F73 
+ 1398      00
+ 1399              	.LASF54:
+ 1400 0555 75646250 		.ascii	"udbPresent\000"
+ 1400      72657365 
+ 1400      6E7400
+ 1401              	.LASF34:
+ 1402 0560 666C6173 		.ascii	"flashcVersion\000"
+ 1402      68635665 
+ 1402      7273696F 
+ 1402      6E00
+ 1403              	.LASF30:
+ 1404 056e 63727970 		.ascii	"cryptoBase\000"
+ 1404      746F4261 
+ 1404      736500
+ 1405              	.LASF51:
+ 1406 0579 736D6966 		.ascii	"smifDeviceNr\000"
+ 1406      44657669 
+ 1406      63654E72 
+ 1406      00
+ 1407              	.LASF105:
+ 1408 0586 69706353 		.ascii	"ipcStructSize\000"
+ 1408      74727563 
+ 1408      7453697A 
+ 1408      6500
+ 1409              	.LASF127:
+ 1410 0594 72616E67 		.ascii	"rangeIntrMask\000"
+ 1410      65496E74 
+ 1410      724D6173 
+ 1410      6B00
+ 1411              	.LASF143:
+ 1412 05a2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1412      43313120 
+ 1412      352E342E 
+ 1412      31203230 
+ 1412      31363036 
+ 1413 05d5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 1413      20726576 
+ 1413      6973696F 
+ 1413      6E203233 
+ 1413      37373135 
+ 1414 0608 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 1414      70202D6D 
+ 1414      6670753D 
+ 1414      66707634 
+ 1414      2D73702D 
+ 1415 063b 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 1415      6F6E7320 
+ 1415      2D666661 
+ 1415      742D6C74 
+ 1415      6F2D6F62 
+ 1416              	.LASF109:
+ 1417 0655 666C6F61 		.ascii	"float\000"
+ 1417      7400
+ 1418              	.LASF73:
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 31
+
+
+ 1419 065b 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 1419      61747573 
+ 1419      43684964 
+ 1419      784D736B 
+ 1419      00
+ 1420              	.LASF140:
+ 1421 066c 63795F64 		.ascii	"cy_device\000"
+ 1421      65766963 
+ 1421      6500
+ 1422              	.LASF101:
+ 1423 0676 63707573 		.ascii	"cpussRomCtl\000"
+ 1423      73526F6D 
+ 1423      43746C00 
+ 1424              	.LASF138:
+ 1425 0682 4F534349 		.ascii	"OSCILLOSCOPE_ADC_CONFIG_STRUCT\000"
+ 1425      4C4C4F53 
+ 1425      434F5045 
+ 1425      5F414443 
+ 1425      5F434F4E 
+ 1426              	.LASF71:
+ 1427 06a1 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 1427      43746C50 
+ 1427      7265656D 
+ 1427      70746162 
+ 1427      6C65506F 
+ 1428              	.LASF144:
+ 1429 06b7 47656E65 		.ascii	"Generated_Source\\PSoC6\\OSCILLOSCOPE_ADC_INIT.c\000"
+ 1429      72617465 
+ 1429      645F536F 
+ 1429      75726365 
+ 1429      5C50536F 
+ 1430              	.LASF123:
+ 1431 06e6 6368616E 		.ascii	"chanEn\000"
+ 1431      456E00
+ 1432              	.LASF24:
+ 1433 06ed 75646242 		.ascii	"udbBase\000"
+ 1433      61736500 
+ 1434              	.LASF113:
+ 1435 06f5 43595F53 		.ascii	"CY_SAR_RANGE_COND_INSIDE\000"
+ 1435      41525F52 
+ 1435      414E4745 
+ 1435      5F434F4E 
+ 1435      445F494E 
+ 1436              	.LASF132:
+ 1437 070e 5F426F6F 		.ascii	"_Bool\000"
+ 1437      6C00
+ 1438              	.LASF17:
+ 1439 0714 696E7433 		.ascii	"int32_t\000"
+ 1439      325F7400 
+ 1440              	.LASF2:
+ 1441 071c 756E7369 		.ascii	"unsigned char\000"
+ 1441      676E6564 
+ 1441      20636861 
+ 1441      7200
+ 1442              	.LASF67:
+ 1443 072a 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 1443      6843746C 
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 32
+
+
+ 1443      4D61696E 
+ 1443      57733446 
+ 1443      72657100 
+ 1444              	.LASF141:
+ 1445 073e 4F534349 		.ascii	"OSCILLOSCOPE_ADC_currentConfig\000"
+ 1445      4C4C4F53 
+ 1445      434F5045 
+ 1445      5F414443 
+ 1445      5F637572 
+ 1446              	.LASF0:
+ 1447 075d 73686F72 		.ascii	"short int\000"
+ 1447      7420696E 
+ 1447      7400
+ 1448              	.LASF128:
+ 1449 0767 6D757853 		.ascii	"muxSwitch\000"
+ 1449      77697463 
+ 1449      6800
+ 1450              	.LASF125:
+ 1451 0771 696E7472 		.ascii	"intrMask\000"
+ 1451      4D61736B 
+ 1451      00
+ 1452              	.LASF78:
+ 1453 077a 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 1453      44697643 
+ 1453      6D644469 
+ 1453      7653656C 
+ 1453      4D736B00 
+ 1454              	.LASF146:
+ 1455 078e 4F534349 		.ascii	"OSCILLOSCOPE_ADC_hwConfigs\000"
+ 1455      4C4C4F53 
+ 1455      434F5045 
+ 1455      5F414443 
+ 1455      5F687743 
+ 1456              	.LASF49:
+ 1457 07a9 73727373 		.ascii	"srssNumHfroot\000"
+ 1457      4E756D48 
+ 1457      66726F6F 
+ 1457      7400
+ 1458              	.LASF62:
+ 1459 07b7 666C6173 		.ascii	"flashEraseDelay\000"
+ 1459      68457261 
+ 1459      73654465 
+ 1459      6C617900 
+ 1460              	.LASF82:
+ 1461 07c7 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 1461      44697638 
+ 1461      43746C4F 
+ 1461      66667365 
+ 1461      7400
+ 1462              	.LASF18:
+ 1463 07d9 75696E74 		.ascii	"uint32_t\000"
+ 1463      33325F74 
+ 1463      00
+ 1464              	.LASF131:
+ 1465 07e2 76726566 		.ascii	"vrefMvValue\000"
+ 1465      4D765661 
+ 1465      6C756500 
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 33
+
+
+ 1466              	.LASF20:
+ 1467 07ee 6C6F6E67 		.ascii	"long double\000"
+ 1467      20646F75 
+ 1467      626C6500 
+ 1468              	.LASF108:
+ 1469 07fa 63686172 		.ascii	"char\000"
+ 1469      00
+ 1470              	.LASF39:
+ 1471 07ff 70726F74 		.ascii	"protVersion\000"
+ 1471      56657273 
+ 1471      696F6E00 
+ 1472              	.LASF102:
+ 1473 080b 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 1473      7352616D 
+ 1473      3043746C 
+ 1473      3000
+ 1474              	.LASF5:
+ 1475 0819 5F5F7569 		.ascii	"__uint16_t\000"
+ 1475      6E743136 
+ 1475      5F7400
+ 1476              	.LASF83:
+ 1477 0824 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 1477      44697631 
+ 1477      3643746C 
+ 1477      4F666673 
+ 1477      657400
+ 1478              	.LASF7:
+ 1479 0837 5F5F696E 		.ascii	"__int32_t\000"
+ 1479      7433325F 
+ 1479      7400
+ 1480              	.LASF36:
+ 1481 0841 6873696F 		.ascii	"hsiomVersion\000"
+ 1481      6D566572 
+ 1481      73696F6E 
+ 1481      00
+ 1482              	.LASF117:
+ 1483 084e 6374726C 		.ascii	"ctrl\000"
+ 1483      00
+ 1484              	.LASF64:
+ 1485 0853 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 1485      6843746C 
+ 1485      4D61696E 
+ 1485      57733146 
+ 1485      72657100 
+ 1486              	.LASF137:
+ 1487 0867 6D697363 		.ascii	"miscConfig\000"
+ 1487      436F6E66 
+ 1487      696700
+ 1488              	.LASF69:
+ 1489 0872 64774368 		.ascii	"dwChSize\000"
+ 1489      53697A65 
+ 1489      00
+ 1490              	.LASF8:
+ 1491 087b 6C6F6E67 		.ascii	"long int\000"
+ 1491      20696E74 
+ 1491      00
+ 1492              	.LASF44:
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 34
+
+
+ 1493 0884 63707573 		.ascii	"cpussIpc0Irq\000"
+ 1493      73497063 
+ 1493      30497271 
+ 1493      00
+ 1494              	.LASF87:
+ 1495 0891 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 1495      50727443 
+ 1495      66674F66 
+ 1495      66736574 
+ 1495      00
+ 1496              	.LASF122:
+ 1497 08a2 72616E67 		.ascii	"rangeCond\000"
+ 1497      65436F6E 
+ 1497      6400
+ 1498              	.LASF46:
+ 1499 08ac 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 1499      734E6F74 
+ 1499      436F6E6E 
+ 1499      65637465 
+ 1499      64497271 
+ 1500              	.LASF60:
+ 1501 08c1 666C6173 		.ascii	"flashWriteDelay\000"
+ 1501      68577269 
+ 1501      74654465 
+ 1501      6C617900 
+ 1502              	.LASF118:
+ 1503 08d1 73616D70 		.ascii	"sampleCtrl\000"
+ 1503      6C654374 
+ 1503      726C00
+ 1504              	.LASF14:
+ 1505 08dc 75696E74 		.ascii	"uint8_t\000"
+ 1505      385F7400 
+ 1506              	.LASF93:
+ 1507 08e4 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 1507      73436D34 
+ 1507      53746174 
+ 1507      75734F66 
+ 1507      66736574 
+ 1508              	.LASF86:
+ 1509 08f9 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 1509      50727449 
+ 1509      6E747243 
+ 1509      66674F66 
+ 1509      66736574 
+ 1510              	.LASF115:
+ 1511 090e 43595F53 		.ascii	"CY_SAR_RANGE_COND_OUTSIDE\000"
+ 1511      41525F52 
+ 1511      414E4745 
+ 1511      5F434F4E 
+ 1511      445F4F55 
+ 1512              	.LASF97:
+ 1513 0928 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 1513      73547269 
+ 1513      6D526F6D 
+ 1513      43746C4F 
+ 1513      66667365 
+ 1514              	.LASF47:
+ARM GAS  C:\Users\Ramon\AppData\Local\Temp\ccyaDezg.s 			page 35
+
+
+ 1515 093e 73727373 		.ascii	"srssNumClkpath\000"
+ 1515      4E756D43 
+ 1515      6C6B7061 
+ 1515      746800
+ 1516              	.LASF129:
+ 1517 094d 6D757853 		.ascii	"muxSwitchSqCtrl\000"
+ 1517      77697463 
+ 1517      68537143 
+ 1517      74726C00 
+ 1518              	.LASF33:
+ 1519 095d 64775665 		.ascii	"dwVersion\000"
+ 1519      7273696F 
+ 1519      6E00
+ 1520              	.LASF29:
+ 1521 0967 69706342 		.ascii	"ipcBase\000"
+ 1521      61736500 
+ 1522              	.LASF80:
+ 1523 096f 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 1523      44697643 
+ 1523      6D645061 
+ 1523      44697653 
+ 1523      656C506F 
+ 1524              	.LASF61:
+ 1525 0985 666C6173 		.ascii	"flashProgramDelay\000"
+ 1525      6850726F 
+ 1525      6772616D 
+ 1525      44656C61 
+ 1525      7900
+ 1526              	.LASF58:
+ 1527 0997 666C6173 		.ascii	"flashRwwRequired\000"
+ 1527      68527777 
+ 1527      52657175 
+ 1527      69726564 
+ 1527      00
+ 1528              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,0 +1,30 @@
+# Byte-Oscilloscope
+# 2023-07-16 02:07:01Z
+
+dont_use_location BLE -1 -1 0
+dont_use_location p4blecell -1 -1 0
+# IO_3@[IOP=(9)][IoId=(3)] is reserved: AnalogTrackJump
+dont_use_io iocell 9 3
+set_location "ClockGenBlock" CLK_GEN -1 -1 0
+set_location "ClockBlock" Clock -1 -1 0
+set_location "CPUSS" CPUSS -1 -1 0
+set_io "CY_CPUSS_SWJ_SWCLK_TCLK(0)" iocell 6 7
+set_io "CY_CPUSS_SWJ_SWDIO_TMS(0)" iocell 6 6
+set_io "OP1_INP(0)" iocell 9 0
+set_io "OP1_INN(0)" iocell 9 1
+set_io "OP1_OUT(0)" iocell 9 2
+set_io "OP0_INP(0)" iocell 9 7
+set_io "OP0_INN(0)" iocell 9 6
+set_io "OP0_OUT(0)" iocell 13 7
+set_io "ADC_CH0(0)" iocell 10 0
+set_io "UART_TX(0)" iocell 5 1
+set_io "LED_GPIO(0)" iocell 1 1
+set_io "UART_RX(0)" iocell 5 0
+set_location "\OSCILLOSCOPE_ADC:IRQ\" interrupt -1 -1 138
+set_location "\OSCILLOSCOPE_ADC:SAR\" SARADC -1 -1 0
+set_location "\FILTER_OP1:cy_mxs40_opamp\" OA -1 -1 0
+set_location "\FILTER_OP0:cy_mxs40_opamp\" OA -1 -1 1
+set_location "\ADC_PWM:TCPWM\" TCPWM -1 -1 0
+set_location "\ADC_DMA:DW\" drqcell -1 -1 0
+set_location "\OSCILLOSCOPE_UART:SCB_IRQ\" interrupt -1 -1 46
+set_location "\OSCILLOSCOPE_UART:SCB\" SCB -1 -1 5

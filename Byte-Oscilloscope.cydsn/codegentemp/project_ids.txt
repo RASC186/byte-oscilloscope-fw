@@ -1,0 +1,8 @@
+C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Short-Oscilloscope.cydsn\Short-Oscilloscope.cyprj|77490ba8-c80f-4b6f-bb80-23616960b319
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|29d3d860-8d1a-4f63-8e5f-ffc2763f8c53
+C:\Users\Ramon\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|eccf870a-14d4-46dc-9bcf-98f734611fdb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|101d4ad5-e329-4f58-b0ec-3a30e1f7b6f5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b6450b65-912a-44c1-ada2-4ec3e5e6de6f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|6b955d95-b72c-4793-b385-8500a5ecbb48
+C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\Byte-Oscilloscope.cydsn\Byte-Oscilloscope.cyprj|57c6738a-ffe3-448f-a9a4-7ec1b0a43823
+C:\Users\Ramon\Desktop\byte-oscilloscope-fw\Oscilloscope\String-Oscilloscope.cydsn\String-Oscilloscope.cyprj|a22523d3-73a0-4ef2-9c36-81b29284ae46
